@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <com.vegen.open.library.HoleCardView
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        app:holeElevation="8dp"
+        app:holeBackgroundColor="@android:color/white"
+        app:holeScallopRadius="10dp"
+        app:holeCornerRadius="10dp">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@mipmap/demo"
+                android:scaleType="centerCrop"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/black"
+                android:textSize="14dp"
+                android:text="可挖孔、可圆角、可带分割线的卡片 ViewGroup"
+                android:layout_centerInParent="true"/>
+        </RelativeLayout>
+
+    </com.vegen.open.library.HoleCardView>
+
+    <com.vegen.open.library.HoleCardView
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="180dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        app:holeElevation="8dp"
+        app:holeBackgroundColor="@android:color/white"
+        app:holeScallopRadius="10dp"
+        app:holeCornerRadius="10dp"
+        app:holeShowDivider="true">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/black"
+                android:textSize="14dp"
+                android:text="可挖孔、可圆角、可带分割线的卡片 ViewGroup"
+                />
+
+            <TextView
+                android:layout_marginTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/black"
+                android:textSize="14dp"
+                android:text="可挖孔、可圆角、可带分割线的卡片 ViewGroup"
+                />
+        </LinearLayout>
+
+    </com.vegen.open.library.HoleCardView>
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--可挖孔、可圆角、可带分割线的卡片 ViewGroup-->
+    <declare-styleable name="HoleCardView">
+        <!--卡片的圆角方向-->
+        <attr name="holeOrientation" format="enum">
+            <enum name="horizontal" value="0" />
+            <enum name="vertical" value="1" />
+        </attr>
+        <!--卡片颜色-->
+        <attr name="holeBackgroundColor" format="color" />
+        <!--卡片半圆的半径-->
+        <attr name="holeScallopRadius" format="dimension" />
+        <!--卡片半圆显示在所在方向的百分比位置-->
+        <attr name="holeScallopPositionPercent" format="float" />
+        <!--是否显示边框-->
+        <attr name="holeShowBorder" format="boolean" />
+        <!--边框宽度-->
+        <attr name="holeBorderWidth" format="dimension" />
+        <!--边框颜色-->
+        <attr name="holeBorderColor" format="color" />
+        <!--是否显示分割线-->
+        <attr name="holeShowDivider" format="boolean" />
+        <!--分割线的宽度-->
+        <attr name="holeDividerWidth" format="dimension" />
+        <!--分割线两端的距离-->
+        <attr name="holeDividerPadding" format="dimension" />
+        <!--分割线颜色-->
+        <attr name="holeDividerColor" format="color" />
+        <!--分割线模式，normal：直线，dash：间隔分割线，默认-->
+        <attr name="holeDividerType" format="enum">
+            <enum name="normal" value="0" />
+            <enum name="dash" value="1" />
+        </attr>
+        <!--分割线是否圆帽-->
+        <attr name="holeDividerDashGap" format="dimension" />
+        <!--分割线的长度-->
+        <attr name="holeDividerDashLength" format="dimension" />
+        <!--控件的类型，normal：矩形；rounded：圆角矩形，默认；scallop：外向圆角-->
+        <attr name="holeCornerType" format="enum">
+            <enum name="normal" value="0" />
+            <enum name="rounded" value="1" />
+            <enum name="scallop" value="2" />
+        </attr>
+        <!--圆角半径-->
+        <attr name="holeCornerRadius" format="dimension" />
+        <!--阴影-->
+        <attr name="android:elevation" />
+        <!--阴影-->
+        <attr name="holeElevation" format="dimension" />
+    </declare-styleable>
+</resources>
