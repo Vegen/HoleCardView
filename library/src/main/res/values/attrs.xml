@@ -32,7 +32,7 @@
             <enum name="normal" value="0" />
             <enum name="dash" value="1" />
         </attr>
-        <!--分割线是否圆帽-->
+        <!--圆帽大小-->
         <attr name="holeDividerDashGap" format="dimension" />
         <!--分割线的长度-->
         <attr name="holeDividerDashLength" format="dimension" />
